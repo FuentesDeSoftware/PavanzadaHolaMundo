@@ -1,0 +1,13 @@
+# NetBeans: contiene variables de entorno (credenciales)
+nbactions.xml
+nbactions-*.xml
+nb-configuration.xml
+
+# Maven
+target/
+
+# Otros
+*.class
+*.log
+.idea/
+.vscode/
