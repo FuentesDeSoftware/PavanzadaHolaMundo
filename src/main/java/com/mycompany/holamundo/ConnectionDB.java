@@ -15,9 +15,9 @@ import java.sql.SQLException;
 
 public class ConnectionDB {
 
-    private static final String URL = "jdbc:sqlserver://avanzada2.database.windows.net:1433;database=estudiantes;user=fuentes@avanzada2;password=2024ix1cloverAP;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
-    private static final String USER = "fuentes";
-    private static final String PASSWORD = "2024ix1cloverAPK";
+    private static final String URL = System.getenv("Connection_String");;
+    private static final String USER = System.getenv("DB_USER");
+    private static final String PASSWORD = System.getenv("DB_PASSWORD");
 
     private static Connection conexion = null;
 
